@@ -1,10 +1,10 @@
-<div align="center">
+﻿<div align="center">
 
 # Daily Construction Log Generator
 
 ### Automated daily construction record generation for MEP projects — copy yesterday's docx, modify changing fields, embed photos, export PDF.
 
-Built from real Macau construction workflows. Automates the most repetitive documentation task on site: daily construction records with weather data, tide reports, site photos, and safety checklists — all generated from a single command.
+Built from real construction workflows. Automates the most repetitive documentation task on site: daily construction records with weather data, tide reports, site photos, and safety checklists — all generated from a single command.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)](https://python.org)
@@ -174,7 +174,7 @@ High tide < 3.0m → ☑ 否 (No warning)
 
 ## 🇨🇳 中文介绍
 
-每日施工记录表自动生成工具。基于澳门真实工程实战，自动完成：
+每日施工记录表自动生成工具。基于真实工程实战，自动完成：
 
 - **复制昨日文档** → 只修改变动字段（日期、天数、天气、潮汐、施工内容、照片）
 - **天气数据提取** → 从气象局 PDF 自动提取中文天气描述
