@@ -69,7 +69,7 @@ def extract_weather(date_str):
             if 'PREVISÃO' in line or 'Vento' in line or 'BM4' in line:
                 break
             stripped = line.strip()
-            if stripped and not stripped.startswith('http') and '澳門' not in stripped:
+            if stripped and not stripped.startswith('http') and '[地區]' not in stripped:
                 chinese_lines.append(stripped)
 
     if chinese_lines:
