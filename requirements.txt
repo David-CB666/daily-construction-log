@@ -1,0 +1,4 @@
+python-docx>=0.8.11
+docx2pdf>=0.1.5
+pypdf>=3.0
+PyMuPDF>=1.23

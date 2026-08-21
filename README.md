@@ -7,7 +7,7 @@
 Built from real construction workflows. Automates the most repetitive documentation task on site: daily construction records with weather data, tide reports, site photos, and safety checklists — all generated from a single command.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
 [![python-docx](https://img.shields.io/badge/python--docx-1.1+-217346?logo=python&logoColor=white)](https://python-docx.readthedocs.io)
 [![PyMuPDF](https://img.shields.io/badge/PyMuPDF-1.23+-00A000?logo=python&logoColor=white)](https://pymupdf.readthedocs.io)
 [![Stars](https://img.shields.io/github/stars/David-CB666/daily-construction-log?style=social)](https://github.com/David-CB666/daily-construction-log/stargazers)
@@ -45,7 +45,7 @@ Yesterday's docx ──copy──→ Today's docx ──modify──→ Embed ph
 ```bash
 git clone https://github.com/David-CB666/daily-construction-log.git
 cd daily-construction-log
-pip install python-docx docx2pdf pypdf pymupdf
+pip install -r requirements.txt
 ```
 
 ### Generate a Daily Log (one command)
