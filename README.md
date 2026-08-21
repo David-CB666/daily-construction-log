@@ -19,6 +19,12 @@ Built from real construction workflows. Automates the most repetitive documentat
 
 ---
 
+## 📸 Demo
+
+![Daily Construction Log Demo](demo/daily_log_demo.jpg)
+
+*Auto-generated daily construction log — weather data, tide info, site photos, safety checklist*
+
 ## 🎯 The Problem
 
 Every construction project requires **daily construction records** — formatted Word documents with:
