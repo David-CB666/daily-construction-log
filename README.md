@@ -21,9 +21,9 @@ Built from real construction workflows. Automates the most repetitive documentat
 
 ## 📸 Demo
 
-![Daily Construction Log Demo](demo/daily_log_demo.jpg)
+![2-in-1 Construction Documentation Toolkit](demo/daily_log_demo.jpg)
 
-*Auto-generated daily construction log — weather data, tide info, site photos, safety checklist*
+*2-in-1 toolkit: Daily log generator (core) + photo schedule naming (bonus)*
 
 ## 🎯 The Problem
 
@@ -191,6 +191,35 @@ High tide < 3.0m → ☑ 否 (No warning)
 - **安全自检继承** → 保持昨日 checkbox 状态不变
 
 **核心策略：** 复制昨日 docx → 修改变动字段，而非从空白模板生成。这避免了 checkbox 丢失、表格结构错误、阶段编号前缀遗漏等问题。
+
+## 🎁 Bonus Tool: Photo Schedule Naming
+
+This repo also includes a site photo management tool as a bonus feature:
+
+### Construction Photo Schedule Naming
+
+Rename scattered site photos into structured filenames based on the construction schedule.
+
+```
+IMG_20250721_001.jpg → 07-21_A1_地盤準備圍蔽_01.jpg
+```
+
+**5-step workflow**: Read schedule → Scan photos → Generate contact sheets (visual ID) → Build mapping → Batch rename
+
+| Script | Function |
+|--------|----------|
+| `bonus/references/generate_contact_sheets.py` | .heic conversion + visual contact sheet generation |
+| `bonus/references/rename_photos_by_schedule.py` | Batch rename with `{date}_{phase_code}_{desc}_{seq}` format |
+
+**Full documentation**: [bonus/BONUS.md](bonus/BONUS.md)
+
+```bash
+# Generate contact sheets for visual identification
+python bonus/references/generate_contact_sheets.py
+
+# Review sheets, edit MAPPING, then execute rename
+python bonus/references/rename_photos_by_schedule.py
+```
 
 ## 🔗 My Other Tools
 
