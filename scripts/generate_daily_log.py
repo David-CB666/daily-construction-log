@@ -25,7 +25,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 # ============================================================
 # 🔧 配置區 — 按項目修改
 # ============================================================
-BASE_DIR = r"D:\Projects\[項目名稱]\每日施工記錄"
+BASE_DIR = r"<PROJECTS_ROOT>\[項目名稱]\每日施工記錄"
 PROJECT_START_DATE = "2026-06-22"  # 開工第一天
 DEFAULT_ENTRY_TIME = "09:00"
 DEFAULT_EXIT_TIME = "18:00"

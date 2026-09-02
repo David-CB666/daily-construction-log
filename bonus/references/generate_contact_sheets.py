@@ -19,8 +19,8 @@ Usage:
 import os, subprocess
 from PIL import Image, ImageDraw, ImageFont
 
-BASE = r"D:\Projects\site_photos"          # <-- EDIT: photo root (date subfolders)
-OUT = r"D:\Projects\output\contact_sheets" # <-- EDIT: contact sheet output
+BASE = r"<PROJECTS_ROOT>\site_photos"          # <-- EDIT: photo root (date subfolders)
+OUT = r"<PROJECTS_ROOT>\output\contact_sheets" # <-- EDIT: contact sheet output
 os.makedirs(OUT, exist_ok=True)
 
 FFMPEG = r"ffmpeg"  # <-- EDIT: or full path like r"C:\Tools\ffmpeg\bin\ffmpeg.exe"

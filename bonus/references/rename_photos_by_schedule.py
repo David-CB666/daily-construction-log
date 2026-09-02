@@ -19,8 +19,8 @@ Usage:
 import os, json
 from pathlib import Path
 
-BASE = Path(r"D:\Projects\site_photos")                    # <-- EDIT: photo root (date subfolders)
-LOG = Path(r"D:\Projects\output\photo_rename_plan.json")    # <-- EDIT: plan output path
+BASE = Path(r"<PROJECTS_ROOT>\site_photos")                    # <-- EDIT: photo root (date subfolders)
+LOG = Path(r"<PROJECTS_ROOT>\output\photo_rename_plan.json")    # <-- EDIT: plan output path
 
 # Mapping: date -> list of (phase_code, phase_desc) in alphabetical filename order
 # Each entry corresponds to one photo in that date folder

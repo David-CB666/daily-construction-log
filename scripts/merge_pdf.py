@@ -15,7 +15,7 @@ import sys
 import argparse
 from pypdf import PdfWriter, PdfReader
 
-BASE_DIR = r"D:\Projects\[項目名稱]\每日施工記錄"
+BASE_DIR = r"<PROJECTS_ROOT>\[項目名稱]\每日施工記錄"
 
 
 def merge(date_str):
