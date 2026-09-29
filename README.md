@@ -20,11 +20,13 @@ Built from real construction workflows. Automates the most repetitive documentat
 
 ---
 
+> **🔒 Demo data notice** — every log, table, tide figure, weather value and photo filename in this repository is a **fictional sample** built for demonstration. No real project records, site photos, client names or submittal references are published here. See [`artifacts/`](artifacts/) for the full fictional example.
+
 ## 📸 Demo
 
-![2-in-1 Construction Documentation Toolkit](demo/daily_log_demo.jpg)
+![2-in-1 Construction Documentation Toolkit](demo/daily_log_demo.png)
 
-*2-in-1 toolkit: Daily log generator (core) + photo schedule naming (bonus)*
+*2-in-1 toolkit: Daily log generator (core) + photo schedule naming (bonus) — fictional demo data*
 
 ## 🎯 The Problem
 
@@ -59,28 +61,28 @@ pip install -r requirements.txt
 
 ```bash
 python scripts/generate_daily_log.py \
-  --date 2026-08-02 \
-  --workers 4 \
-  --tasks "安裝圍網,安裝水電樁,堤岸燈安裝"
+  --date 2026-01-15 \
+  --workers 2 \
+  --tasks "北側圍網安裝,基礎開挖,燈喉預埋"
 ```
 
 ### With Manual Weather/Tide Override
 
 ```bash
 python scripts/generate_daily_log.py \
-  --date 2026-08-02 \
-  --workers 4 \
+  --date 2026-01-15 \
+  --workers 2 \
   --tasks "工序1,工序2" \
   --weather "大致多雲" \
-  --tide-low "1.0m（約17:00）" \
-  --tide-high "2.8m（約08:00）" \
+  --tide-low "1.3m（約08:10）" \
+  --tide-high "2.1m（約01:40）" \
   --no-pdf
 ```
 
 ### Standalone PDF Merger
 
 ```bash
-python scripts/merge_pdf.py --date 2026-08-02
+python scripts/merge_pdf.py --date 2026-01-15
 ```
 
 Merges: construction record PDF + weather report PDF + tide forecast PDF → one complete file.
@@ -113,7 +115,7 @@ daily-construction-log/
 │   └── reference-screenshots.md # Troubleshooting case studies
 ├── templates/
 │   └── 空白模板說明.md           # Blank template structure (for reference only)
-├── artifacts/                   # Generated log examples
+├── artifacts/                   # Generated log examples (fictional sample)
 ├── README.md
 └── LICENSE
 ```
@@ -202,7 +204,7 @@ This repo also includes a site photo management tool as a bonus feature:
 Rename scattered site photos into structured filenames based on the construction schedule.
 
 ```
-IMG_20250721_001.jpg → 07-21_A1_地盤準備圍蔽_01.jpg
+IMG_20260115_001.jpg → 01-15_A1_圍網安裝_01.jpg
 ```
 
 **5-step workflow**: Read schedule → Scan photos → Generate contact sheets (visual ID) → Build mapping → Batch rename

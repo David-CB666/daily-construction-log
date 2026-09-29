@@ -4,13 +4,13 @@ Rename scattered site photos into structured filenames based on the construction
 
 ## The Problem
 
-Site photos come in with random filenames like `IMG_20250721_001.jpg`. You need them named by:
+Site photos come in with random filenames like `IMG_20260115_001.jpg`. You need them named by:
 - Date
 - Phase code (A1/B1/C1 from schedule)
 - Phase description
 - Sequential number
 
-Example: `IMG_20250721_001.jpg` → `07-21_A1_地盤準備圍蔽_01.jpg`
+Example: `IMG_20260115_001.jpg` → `01-15_A1_圍網安裝_01.jpg`
 
 ## The Solution
 
