@@ -20,7 +20,7 @@ Built from real construction workflows. Automates the most repetitive documentat
 
 ---
 
-> **🔒 Demo data notice** — every log, table, tide figure, weather value and photo filename in this repository is a **fictional sample** built for demonstration. No real project records, site photos, client names or submittal references are published here. See [`artifacts/`](artifacts/) for the full fictional example.
+> **🔒 Demo data notice** — the sample log under [`artifacts/`](artifacts/), the demo image, and every date / worker count / task list / tide figure shown in this README are **fictional**, chosen to be internally consistent with each other; they do not correspond to any real project record. No client names, site addresses or real site photographs are published in this repository.
 
 ## 📸 Demo
 
